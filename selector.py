@@ -3,8 +3,9 @@ import pandas as pd
 import base64
 from numpy import abs
 
+from config import filename
 
-filename = "full_list_v2.csv"
+
 df = pd.read_csv(filename, dtype={'status': int})
 
 page_volume = 50
