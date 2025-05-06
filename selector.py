@@ -199,6 +199,6 @@ with st.container():
 
 if st.session_state.prev_status != df.status.value_counts().to_string():
     print('-------')
-    print(f'progress: {round(df.status[df.status != 0].shape[0] / df.status.shape[0]* 100, 2) }%')
+    print(f'progress: {round(df.status[df.status != 0].shape[0] / df.status.shape[0]* 100, 3) }%')
     print(df.status.value_counts().sort_index().to_string())
     st.session_state.prev_status = df.status.value_counts().to_string()
